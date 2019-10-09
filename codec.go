@@ -153,6 +153,10 @@ func (cdc *Codec) TypeInfosByName() map[string]*TypeInfo {
 	return cdc.nameToTypeInfo
 }
 
+func (cdc *Codec) ConcreteInfos() []*TypeInfo {
+	return cdc.concreteInfos
+}
+
 func (cdc *Codec) DisFixToTypeInfo() map[DisfixBytes]*TypeInfo {
 	return cdc.disfixToTypeInfo
 }
